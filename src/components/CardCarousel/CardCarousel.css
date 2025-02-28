@@ -1,4 +1,11 @@
-.card-carousel-section {
+.card-carousel {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+/* .card-carousel-section {
   padding: 40px 20px;
   width: 100%;
   max-width: 1200px;
@@ -18,4 +25,4 @@
   scroll-behavior: smooth;
   gap: 20px;
   width: 100%;
-}
+} */
