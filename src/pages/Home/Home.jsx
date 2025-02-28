@@ -2,6 +2,7 @@ import React from 'react';
 import Section from '../../components/Section/Section';
 import CardCarousel from '../../components/CardCarousel/CardCarousel';
 import './Home.css';
+import exampleImage from '../../assets/example_img.jpg';
 
 function Home() {
   const topSectionContent = {
@@ -17,8 +18,9 @@ function Home() {
 
   const cardsData = [
     {
-      title: "Caption #1",
-      description: "Description"
+      title: "Hang out with Creative Labs",
+      description: "I love spending time with my creatives and making memories!",
+      image: exampleImage
     },
     {
       title: "Caption #1",

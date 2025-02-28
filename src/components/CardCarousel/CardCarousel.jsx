@@ -12,6 +12,7 @@ function CardCarousel({ heading, cards }) {
             key={index} 
             title={card.title} 
             description={card.description} 
+            image={card.image}
           />
         ))}
       </div>
