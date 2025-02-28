@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import Section from '../../components/Section/Section';
 import CardCarousel from '../../components/CardCarousel/CardCarousel';
 import './Home.css';
@@ -44,13 +45,21 @@ function Home() {
     }
   ];
 
+  const [showMore, setShowMore] = useState(true);
+
   return (
-    <div className="home">
-      <Section heading={topSectionContent.heading} description={topSectionContent.description} imagePosition="right"/>
-      
-      <Section heading={middleSectionContent.heading} caption={middleSectionContent.caption} description={middleSectionContent.description} imagePosition="left"/>
-      
-      <CardCarousel heading="Heading #1" cards={cardsData} />
+    <div>
+        <div className="home">
+        <Section heading={topSectionContent.heading} description={topSectionContent.description} imagePosition="right"/>
+        
+        <Section heading={middleSectionContent.heading} caption={middleSectionContent.caption} description={middleSectionContent.description} imagePosition="left"/>
+        
+        <button className="showMore" onClick={() => setShowMore(!showMore)}>
+            {showMore ? "Show Less" : "Show More"}
+        </button>
+
+        {showMore && <CardCarousel heading="Heading #1" cards={cardsData} />}
+        </div>
     </div>
   );
 }
