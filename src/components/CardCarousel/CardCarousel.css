@@ -7,7 +7,7 @@
   gap: 32px;
 }
 
-/* .card-carousel-section {
+.card-carousel-section {
   padding: 40px 20px;
   width: 100%;
   max-width: 1200px;
@@ -27,4 +27,4 @@
   scroll-behavior: smooth;
   gap: 20px;
   width: 100%;
-} */
+}

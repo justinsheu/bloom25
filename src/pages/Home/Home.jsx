@@ -45,11 +45,11 @@ function Home() {
     }
   ];
 
-  const [showMore, setShowMore] = useState(true);
+  const [showMore, setShowMore] = useState(false);
 
   return (
     <div>
-        <div className="home">
+      <div className="home">
         <Section heading={topSectionContent.heading} description={topSectionContent.description} imagePosition="right"/>
         
         <Section heading={middleSectionContent.heading} caption={middleSectionContent.caption} description={middleSectionContent.description} imagePosition="left"/>
@@ -59,7 +59,7 @@ function Home() {
         </button>
 
         {showMore && <CardCarousel heading="Heading #1" cards={cardsData} />}
-        </div>
+      </div>
     </div>
   );
 }
